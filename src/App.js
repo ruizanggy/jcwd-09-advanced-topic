@@ -12,12 +12,9 @@ function App() {
 
   return (
     <div>
-      {/* <StyleButton/>
-      <Button/>
-      <StyleText/> */}
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        {/* <Route path="/" element={<LearnHOC/>}/> */}
+        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<LearnHOC/>}/>
       </Routes>
     </div>
   );
