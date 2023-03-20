@@ -3,15 +3,18 @@ import LearnHOC from "./pages/LearnHOC";
 import Home from "./pages/Home";
 function App() {
   //cara bikin component
-  // const Button = (props) => <button style={props.style}>Click me</button>
-  // const Text = (props) => <p style={props.style}>TESTING</p>
+  const Button = (props) => <button style={props.style}>Click me</button>
+  const Text = (props) => <p style={props.style}>TESTING</p>
 
   // HARUS CAPITAL
-  // const StyleButton = LearnHOC(Button)
-  // const StyleText = LearnHOC(Text)
+  const StyleButton = LearnHOC(Button)
+  const StyleText = LearnHOC(Text)
 
   return (
     <div>
+      <StyleButton/>
+      <Button/>
+      <StyleText/>
       <Routes>
         <Route path="/home" element={<Home/>}/>
         <Route path="/" element={<LearnHOC/>}/>
